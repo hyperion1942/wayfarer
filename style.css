@@ -1,0 +1,34 @@
+:root {
+  --paper: #fbe6ce;
+  --surface: #fff6ea;
+  --ink: #3b2a20;
+  --muted: #7a6656;
+  --accent: #b5533f;
+  --hairline: #e6cdb0;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+    "Helvetica Neue", Arial, sans-serif;
+}
+.top, main, footer { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+.top { display: flex; justify-content: space-between; align-items: center;
+  padding-top: 24px; gap: 12px; flex-wrap: wrap; }
+.brand { font-weight: 700; letter-spacing: 0.5px; color: var(--ink); text-decoration: none; }
+.langs a { color: var(--muted); text-decoration: none; padding: 4px 10px; border-radius: 8px; }
+.langs a[aria-current] { background: var(--surface); color: var(--ink); }
+main { background: var(--surface); border: 1px solid var(--hairline); border-radius: 16px;
+  margin-top: 20px; padding: 8px 28px 24px; }
+h1 { font-size: 28px; margin: 20px 0 4px; }
+h2 { font-size: 18px; margin: 28px 0 6px; }
+p, li { margin: 6px 0; }
+.lead { color: var(--muted); }
+.updated { color: var(--muted); font-size: 14px; }
+a { color: var(--accent); }
+footer { color: var(--muted); font-size: 14px; padding-top: 16px; padding-bottom: 40px; }
+.links { list-style: none; padding: 0; }
+.links li { margin: 10px 0; }
+@media (max-width: 520px) { main { padding: 4px 18px 18px; } h1 { font-size: 24px; } }
